@@ -1,5 +1,24 @@
-<h1><%= @movie.title %></h1>
-<p><strong>Rating:</strong> <%= @movie.rating %></p>
-<p><strong>Release date:</strong> <%= @movie.release_date %></p>
-<p><%= @movie.description %></p>
-<p><%= link_to 'Back', movies_path %></p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @movie.title %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @movie.rating %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @movie.description %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @movie.release_date %>
+</p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
